@@ -2,4 +2,4 @@ h1 スライド一覧
 p クリックしたらダウンロードできます
 -@slides.each do |slide|
   li
-    = link_to slide[:filename], ""
+    = link_to slide[:filename], download_path(slide[:filepath])
