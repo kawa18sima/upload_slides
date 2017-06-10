@@ -21,6 +21,11 @@ class SlidesController < ApplicationController
     end
     redirect_to action: :index
   end
+
+  def download
+    send_file(Rails.root.join('public' + params[:id] + "." + params[:format]))
+  end
+
   private
 
   def slide_params
