@@ -182,6 +182,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  execjs
   jbuilder (~> 2.5)
   jquery-rails
   less-rails

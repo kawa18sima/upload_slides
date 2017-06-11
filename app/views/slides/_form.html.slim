@@ -1,0 +1,4 @@
+= form_tag '/slides', method: :post, multipart: true do
+  .form-group
+    = file_field_tag :file
+    = submit_tag nil, class: 'btn btn-primary'
