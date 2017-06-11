@@ -1,5 +1,14 @@
-h1 スライド一覧
-p クリックしたらダウンロードできます
--@slides.each do |slide|
-  li
-    = link_to slide[:filename], download_path(slide[:filepath])
+- model_class = Slide
+.page-header
+  h1 スライド一覧
+  p クリックしたらダウンロードできます
+table.table.table-striped
+  thead
+    tr
+      th スライド
+  tbody
+    - @slides.each do |slide|
+      tr
+        td= link_to slide[:filename], download_path(slide[:filepath])
+
+
