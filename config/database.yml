@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: upload_slides_production
-  username: upload_slides
-  password: <%= ENV['UPLOAD_SLIDES_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
