@@ -32,6 +32,8 @@ html lang="en"
     .container
       .row
         .col-lg-9
+          p.notice = notice
+          p.alert = alert
           = bootstrap_flash
           = yield
         .col-lg-3
@@ -44,4 +46,4 @@ html lang="en"
                     = link_to slide[:filename], download_path(slide[:filepath])
 
       footer
-        p &copy; Bird Department 2017
+        p &copy; kawa 2018
